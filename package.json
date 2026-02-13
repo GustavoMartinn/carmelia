@@ -1,0 +1,51 @@
+{
+  "name": "carmelia",
+  "version": "0.1.0",
+  "description": "Code-aware HTTP client that reads your API source code and generates ready-to-run requests",
+  "type": "module",
+  "bin": {
+    "carmelia": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "carmelia": "tsx src/cli/index.ts"
+  },
+  "keywords": [
+    "http",
+    "client",
+    "api",
+    "rest",
+    "nestjs",
+    "express",
+    "go",
+    "scanner",
+    "code-aware"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "picocolors": "^1.1.1",
+    "ts-morph": "^27.0.2",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
