@@ -1,0 +1,31 @@
+name: carmelia
+arch: amd64
+platform: linux
+version: "1.0.0"
+maintainer: GustavoMartinn <gumartin29@gmail.com>
+description: Carmelia — The HTTP client that reads your code.
+homepage: https://github.com/GustavoMartinn/carmelia
+license: MIT
+
+overrides:
+  deb:
+    depends:
+      - libwebkit2gtk-4.1-0
+      - libgtk-3-0
+  archlinux:
+    depends:
+      - webkit2gtk-4.1
+      - gtk3
+
+contents:
+  - src: build/bin/carmelia
+    dst: /usr/local/bin/carmelia
+
+  - src: build/cli-bundle.cjs
+    dst: /usr/share/carmelia/cli-bundle.cjs
+
+  - src: build/appicon.png
+    dst: /usr/share/icons/hicolor/256x256/apps/carmelia.png
+
+  - src: carmelia.desktop
+    dst: /usr/share/applications/carmelia.desktop

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Carmelia
+Exec=/usr/local/bin/carmelia
+Icon=carmelia
+Type=Application
+Categories=Development;
+StartupWMClass=carmelia
+Comment=The HTTP client that reads your code

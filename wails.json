@@ -1,0 +1,21 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "carmelia",
+  "outputfilename": "carmelia",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "info": {
+    "companyName": "",
+    "productName": "Carmelia",
+    "productVersion": "1.0.0"
+  },
+  "author": {
+    "name": "GustavoMartinn",
+    "email": "gumartin29@gmail.com"
+  },
+  "wailsjsdir": "./frontend",
+  "assetdir": "./frontend/dist",
+  "tags": "webkit2_41"
+}

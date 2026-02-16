@@ -1,0 +1,29 @@
+# Build artifacts
+build/bin/
+build/cli-bundle.*
+frontend/dist/
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Wails generated bindings
+frontend/wailsjs/go/
+frontend/package.json.md5
+
+# Build output
+dist/
+
+# Packages
+*.deb
+*.rpm
+
+# OS
+.DS_Store
+
+# NSIS temp files
+build/windows/installer/tmp/
+
+# Project runtime data
+.carmelia/
+.claude/
